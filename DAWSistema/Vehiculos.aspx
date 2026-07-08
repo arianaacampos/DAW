@@ -141,11 +141,7 @@
         </nav>
 
         <div class="header-vehiculo">
-            <div style="background-color: white; padding: 20px 50px; text-align: center; border-bottom: 1px solid #ddd;">
-    <h3 style="margin-bottom: 10px; color: #111;">📅 Seleccioná la fecha de tu viaje antes de reservar:</h3>
-    <asp:TextBox ID="txtFechaReserva" runat="server" TextMode="Date" CssClass="btn-filtros" style="font-size: 1.1rem; padding: 10px;"></asp:TextBox>
-    <asp:Button ID="btnMisReservas" runat="server" Text="Ver Mis Reservas" CssClass="btn-login" style="margin-left: 20px;" OnClick="btnMisReservas_Click" />
-</div>
+          
             <div class="header-text">
                 <h1>Nuestros Vehículos</h1>
                 <p>Encuentra el auto perfecto para tu próxima aventura.</p>

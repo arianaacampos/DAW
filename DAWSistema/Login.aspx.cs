@@ -1,4 +1,5 @@
-﻿using BLL;
+﻿using BE;
+using BLL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,29 +25,33 @@ namespace DAWSistema
             string usuarioIngresado = txtUsuario.Text.Trim();
             string claveIngresada = txtClave.Text.Trim();
 
-            // Ejecutamos tu lógica de negocios (UsuarioGestor)
             UsuarioGestor gestor = new UsuarioGestor();
             string resultado = gestor.IntentarLogin(usuarioIngresado, claveIngresada);
-
             if (resultado == "OK")
             {
-                // Guardamos la sesión activa
-                Session["UsuarioLogueado"] = usuarioIngresado;
-
-                // Bitácora automática silenciosa
+                SessionManager.GetInstance.Usuario = usuarioIngresado;
                 BitacoraGestor.RegistrarAccion(usuarioIngresado, "Login exitoso");
 
-                // Redirigimos al menú principal
-                Response.Redirect("Principal.aspx");
-            }
-            else
-            {
-                // Mostramos el error devuelto por la BLL (ej. Contraseña incorrecta, Cuenta bloqueada, etc.)
-                lblMensaje.Text = resultado;
+                // Revisamos TODO el sistema antes de dejarlo pasar
+                SeguridadGestor segGestor = new SeguridadGestor();
+                string estadoSistema = segGestor.VerificarSistemaCompleto();
 
-                // Registramos el incidente en la bitácora
-                string usuarioFallo = string.IsNullOrEmpty(usuarioIngresado) ? "Desconocido" : usuarioIngresado;
-                BitacoraGestor.RegistrarAccion(usuarioFallo, "Fallo de login: " + resultado);
+                // ⚠️ TRUCO PARA EL PARCIAL: 
+                // Para mostrarle la pantalla roja al profesor, forzá el error temporalmente así:
+                // estadoSistema = "Error simulado en tabla Usuarios para demostración";
+
+                if (estadoSistema != "OK")
+                {
+                    // Se rompió algo, a la pantalla roja!
+                    Session["ErrorIntegridad"] = estadoSistema;
+                    Response.Redirect("ControlIntegridad.aspx");
+                }
+                else
+                {
+                    // Todo sano, pasa al sistema
+                    if (Session["FechaInicio"] != null) Response.Redirect("Vehiculos.aspx");
+                    else Response.Redirect("Principal.aspx");
+                }
             }
         }
     }

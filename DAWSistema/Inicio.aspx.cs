@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BE;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,7 @@ namespace DAWSistema
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack && Session["UsuarioLogueado"] != null)
+            if (!IsPostBack && SessionManager.GetInstance.Usuario != null)
             {
                 btnIrLogin.Text = "🏠 Mi Panel";
             }
@@ -27,7 +28,7 @@ namespace DAWSistema
 
         protected void btnIrLogin_Click(object sender, EventArgs e)
         {
-            if (Session["UsuarioLogueado"] != null)
+            if (SessionManager.GetInstance.Usuario != null)
                 Response.Redirect("Principal.aspx");
             else
                 Response.Redirect("Login.aspx");

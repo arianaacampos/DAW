@@ -1,4 +1,5 @@
-﻿using BLL;
+﻿using BE;
+using BLL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,12 +13,12 @@ namespace DAWSistema
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["UsuarioLogueado"] == null) Response.Redirect("Login.aspx");
+            if (SessionManager.GetInstance.Usuario == null) Response.Redirect("Login.aspx");
             if (!IsPostBack) CargarGrilla();
         }
         private void CargarGrilla()
         {
-            string usuario = Session["UsuarioLogueado"].ToString();
+            string usuario = SessionManager.GetInstance.Usuario;
             ReservaGestor gestor = new ReservaGestor();
             gvMisReservas.DataSource = gestor.VerMisReservas(usuario);
             gvMisReservas.DataBind();
@@ -33,7 +34,7 @@ namespace DAWSistema
         {
             int id = Convert.ToInt32(gvMisReservas.DataKeys[e.RowIndex].Value);
             ReservaGestor gestor = new ReservaGestor();
-            gestor.CancelarReserva(id, Session["UsuarioLogueado"].ToString());
+            gestor.CancelarReserva(id, SessionManager.GetInstance.Usuario);
             CargarGrilla();
         }
 
@@ -59,7 +60,7 @@ namespace DAWSistema
             DateTime fechaActualizada = Convert.ToDateTime(txtNuevaFecha.Text);
 
             ReservaGestor gestor = new ReservaGestor();
-            gestor.ModificarReserva(id, fechaActualizada, Session["UsuarioLogueado"].ToString());
+            gestor.ModificarReserva(id, fechaActualizada, SessionManager.GetInstance.Usuario);
 
             gvMisReservas.EditIndex = -1;
             CargarGrilla();

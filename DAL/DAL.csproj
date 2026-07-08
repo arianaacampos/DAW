@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="BitacoraMapper.cs" />
     <Compile Include="ReservaMapper.cs" />
+    <Compile Include="SeguridadMapper.cs" />
     <Compile Include="UsuarioMapper.cs" />
     <Compile Include="VehiculoMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BE;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -13,8 +14,8 @@ namespace DAWSistema
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["UsuarioLogueado"] == null)
-            {
+             if (SessionManager.GetInstance.Usuario == null)
+                {
                 Response.Redirect("Login.aspx");
             }
 

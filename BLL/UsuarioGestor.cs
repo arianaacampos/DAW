@@ -52,5 +52,11 @@ namespace BLL
                 }
             }
         }
+        public void CambiarClave(string username, string nuevaClave)
+        {
+            UsuarioMapper mapper = new UsuarioMapper();
+            mapper.ActualizarPassword(username, nuevaClave);
+            BitacoraGestor.RegistrarAccion(username, "Modificó su contraseña");
         }
+    }
 }

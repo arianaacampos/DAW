@@ -13,32 +13,47 @@ namespace DAWSistema
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["UsuarioLogueado"] == null)
+
+            if (SessionManager.GetInstance.Usuario == null)
             {
                 Response.Redirect("Login.aspx");
             }
 
             if (!IsPostBack)
             {
-                string usuario = Session["UsuarioLogueado"].ToString();
+                // 🔥 Leemos con Singleton
+                string usuario = SessionManager.GetInstance.Usuario;
                 lblUsuario.Text = usuario;
+                lblUsuarioSidebar.Text = usuario;
 
-                // ====== CONTROL DE ROLES ======
-                if (usuario == "Admin")
+                cardFlota.Visible = false;
+                cardBitacora.Visible = false;
+                cardSeguridad.Visible = false;
+                linkBitacora.Visible = false;
+
+                if (usuario.ToLower() == "juan")
                 {
-                    // Es el jefe: Puede ver la bitácora
-                    btnBitacora.Visible = true;
+                    // Usuario normal: Solo reservas (la tarjeta de clave ya es fija para todos)
                 }
-                else
+                else if (usuario.ToLower() == "admin")
                 {
-                    // Es un cliente normal: Ocultamos el botón de la bitácora
-                    btnBitacora.Visible = false;
+                    cardFlota.Visible = true;
+                    cardBitacora.Visible = true;
+                    linkBitacora.Visible = true;
+                }
+                else if (usuario.ToLower() == "master")
+                {
+                    cardBitacora.Visible = true;
+                    linkBitacora.Visible = true;
+                    cardSeguridad.Visible = true;
+                    cardReservas.Visible = false;
+                    linkReservas.Visible = false;
                 }
             }
         }
-        protected void btnVehiculos_Click(object sender, EventArgs e)
+        protected void btnMisReservas_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Vehiculos.aspx");
+            Response.Redirect("MisReservas.aspx");
         }
 
         protected void btnBitacora_Click(object sender, EventArgs e)
@@ -48,18 +63,24 @@ namespace DAWSistema
 
         protected void btnSalir_Click(object sender, EventArgs e)
         {
-            // Registramos la salida en la Bitácora antes de matar la sesión
-            if (Session["UsuarioLogueado"] != null)
+            if (SessionManager.GetInstance.Usuario != null)
             {
-                string usuario = Session["UsuarioLogueado"].ToString();
+                string usuario = SessionManager.GetInstance.Usuario;
                 BitacoraGestor.RegistrarAccion(usuario, "Logout exitoso");
             }
 
-            // Matamos el objeto Session para liberar memoria e invalidar el acceso
-            Session.Abandon();
-
-            // Lo redirigimos de vuelta al Login
+            // 🔥 Cerramos sesión con Singleton
+            SessionManager.GetInstance.Logout();
             Response.Redirect("Login.aspx");
+        }
+        protected void btnVehiculos_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Vehiculos.aspx");
+        }
+
+        protected void btnCambiarClave_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("CambiarClave.aspx");
         }
 
     }

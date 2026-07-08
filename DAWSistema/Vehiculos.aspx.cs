@@ -15,9 +15,9 @@ namespace DAWSistema
         {
             if (!IsPostBack)
             {
-                if (Session["UsuarioLogueado"] != null)
+                if (SessionManager.GetInstance.Usuario == null)
                 {
-                    btnAcceso.Text = "🏠 Volver al Panel (" + Session["UsuarioLogueado"].ToString() + ")";
+                    btnAcceso.Text = "🏠 Volver al Panel (" + SessionManager.GetInstance.Usuario + ")";
                 }
                 else
                 {
@@ -28,7 +28,7 @@ namespace DAWSistema
 
         protected void btnAcceso_Click(object sender, EventArgs e)
         {
-            if (Session["UsuarioLogueado"] != null)
+            if (SessionManager.GetInstance.Usuario != null)
             {
                 Response.Redirect("Principal.aspx");
             }
@@ -63,7 +63,7 @@ namespace DAWSistema
         }
         protected void btnMisReservas_Click(object sender, EventArgs e)
         {
-            if (Session["UsuarioLogueado"] != null) Response.Redirect("MisReservas.aspx");
+            if (SessionManager.GetInstance.Usuario != null) Response.Redirect("MisReservas.aspx");
             else Response.Redirect("Login.aspx");
         }
 
@@ -77,7 +77,7 @@ namespace DAWSistema
             }
 
             // 2. Si no está logueado, le avisamos y lo mandamos a loguearse
-            if (Session["UsuarioLogueado"] == null)
+            if (SessionManager.GetInstance.Usuario == null)
             {
                 string scriptLogin = "alert('⚠️ ¡Casi listo! Iniciá sesión o registrate para confirmar la reserva.'); window.location.href='Login.aspx';";
                 ClientScript.RegisterStartupScript(this.GetType(), "AlertaLogin", scriptLogin, true);
@@ -85,7 +85,7 @@ namespace DAWSistema
             }
 
             // 3. Si ya eligió fecha y está logueado, ¡RESERVAMOS DIRECTO!
-            string usuarioLogueado = Session["UsuarioLogueado"].ToString();
+            string usuarioLogueado = SessionManager.GetInstance.Usuario;
             DateTime fechaSeleccionada = Convert.ToDateTime(Session["FechaInicio"].ToString());
 
             ReservaGestor gestor = new ReservaGestor();

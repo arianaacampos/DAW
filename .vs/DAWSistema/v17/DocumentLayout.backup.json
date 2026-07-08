@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\dawsistema\\inicio.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|solutionrelative:dawsistema\\inicio.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\dawsistema\\inicio.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|solutionrelative:dawsistema\\inicio.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\dawsistema\\principal.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|solutionrelative:dawsistema\\principal.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,84 +11,52 @@
       "RelativeMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|solutionrelative:dawsistema\\principal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\dawsistema\\vehiculos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|solutionrelative:dawsistema\\vehiculos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|c:\\users\\aru\\onedrive\\desktop\\dawsistema\\dawsistema\\cambiarclave.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|solutionrelative:dawsistema\\cambiarclave.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|c:\\users\\aru\\onedrive\\desktop\\dawsistema\\dawsistema\\misreservas.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|solutionrelative:dawsistema\\misreservas.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|c:\\users\\aru\\onedrive\\desktop\\dawsistema\\dawsistema\\misreservas.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|solutionrelative:dawsistema\\misreservas.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B779790C-2867-40C8-B6AA-C38916ECBFBE}|BE\\BE.csproj|C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\be\\vehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B779790C-2867-40C8-B6AA-C38916ECBFBE}|BE\\BE.csproj|solutionrelative:be\\vehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B779790C-2867-40C8-B6AA-C38916ECBFBE}|BE\\BE.csproj|C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\be\\usuariobe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B779790C-2867-40C8-B6AA-C38916ECBFBE}|BE\\BE.csproj|solutionrelative:be\\usuariobe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B779790C-2867-40C8-B6AA-C38916ECBFBE}|BE\\BE.csproj|c:\\users\\aru\\onedrive\\desktop\\dawsistema\\be\\reservabe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B779790C-2867-40C8-B6AA-C38916ECBFBE}|BE\\BE.csproj|solutionrelative:be\\reservabe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B779790C-2867-40C8-B6AA-C38916ECBFBE}|BE\\BE.csproj|C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\be\\bitacorabe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B779790C-2867-40C8-B6AA-C38916ECBFBE}|BE\\BE.csproj|solutionrelative:be\\bitacorabe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|c:\\users\\aru\\onedrive\\desktop\\dawsistema\\dawsistema\\vehiculos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|solutionrelative:dawsistema\\vehiculos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C8DEDFA-B3D0-4FEF-BA8D-7DDFE889FE7C}|BLL\\BLL.csproj|c:\\users\\aru\\onedrive\\desktop\\dawsistema\\bll\\reservagestor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C8DEDFA-B3D0-4FEF-BA8D-7DDFE889FE7C}|BLL\\BLL.csproj|solutionrelative:bll\\reservagestor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A5C7458-2374-4E7E-98A4-1AF3D1049C51}|DAL\\DAL.csproj|c:\\users\\aru\\onedrive\\desktop\\dawsistema\\dal\\reservamapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A5C7458-2374-4E7E-98A4-1AF3D1049C51}|DAL\\DAL.csproj|solutionrelative:dal\\reservamapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\dawsistema\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|solutionrelative:dawsistema\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\dawsistema\\bitacora.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|solutionrelative:dawsistema\\bitacora.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A5C7458-2374-4E7E-98A4-1AF3D1049C51}|DAL\\DAL.csproj|C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\dal\\bitacoramapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A5C7458-2374-4E7E-98A4-1AF3D1049C51}|DAL\\DAL.csproj|solutionrelative:dal\\bitacoramapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A5C7458-2374-4E7E-98A4-1AF3D1049C51}|DAL\\DAL.csproj|C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\dal\\vehiculomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A5C7458-2374-4E7E-98A4-1AF3D1049C51}|DAL\\DAL.csproj|solutionrelative:dal\\vehiculomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A5C7458-2374-4E7E-98A4-1AF3D1049C51}|DAL\\DAL.csproj|C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\dal\\usuariomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A5C7458-2374-4E7E-98A4-1AF3D1049C51}|DAL\\DAL.csproj|solutionrelative:dal\\usuariomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\dawsistema\\bitacora.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|solutionrelative:dawsistema\\bitacora.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\dawsistema\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|solutionrelative:dawsistema\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C8DEDFA-B3D0-4FEF-BA8D-7DDFE889FE7C}|BLL\\BLL.csproj|C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\bll\\vehiculogestor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C8DEDFA-B3D0-4FEF-BA8D-7DDFE889FE7C}|BLL\\BLL.csproj|solutionrelative:bll\\vehiculogestor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|c:\\users\\aru\\onedrive\\desktop\\dawsistema\\dawsistema\\cambiarclave.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|solutionrelative:dawsistema\\cambiarclave.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7C8DEDFA-B3D0-4FEF-BA8D-7DDFE889FE7C}|BLL\\BLL.csproj|C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\bll\\usuariogestor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C8DEDFA-B3D0-4FEF-BA8D-7DDFE889FE7C}|BLL\\BLL.csproj|solutionrelative:bll\\usuariogestor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C8DEDFA-B3D0-4FEF-BA8D-7DDFE889FE7C}|BLL\\BLL.csproj|C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\bll\\bitacoragestor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C8DEDFA-B3D0-4FEF-BA8D-7DDFE889FE7C}|BLL\\BLL.csproj|solutionrelative:bll\\bitacoragestor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3A5C7458-2374-4E7E-98A4-1AF3D1049C51}|DAL\\DAL.csproj|C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\dal\\usuariomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A5C7458-2374-4E7E-98A4-1AF3D1049C51}|DAL\\DAL.csproj|solutionrelative:dal\\usuariomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\dawsistema\\vehiculos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|solutionrelative:dawsistema\\vehiculos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\dawsistema\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|solutionrelative:dawsistema\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\dawsistema\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|solutionrelative:dawsistema\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|c:\\users\\aru\\onedrive\\desktop\\dawsistema\\dawsistema\\inicio.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|solutionrelative:dawsistema\\inicio.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\dawsistema\\inicio.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|solutionrelative:dawsistema\\inicio.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\dawsistema\\misreservas.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|solutionrelative:dawsistema\\misreservas.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\dawsistema\\misreservas.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|solutionrelative:dawsistema\\misreservas.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\dawsistema\\vehiculos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|solutionrelative:dawsistema\\vehiculos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -106,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -118,124 +78,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Principal.aspx",
-              "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\Principal.aspx",
-              "RelativeDocumentMoniker": "DAWSistema\\Principal.aspx",
-              "ToolTip": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\Principal.aspx",
-              "RelativeToolTip": "DAWSistema\\Principal.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-06-01T03:14:40.234Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Vehiculos.aspx",
-              "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\Vehiculos.aspx",
-              "RelativeDocumentMoniker": "DAWSistema\\Vehiculos.aspx",
-              "ToolTip": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\Vehiculos.aspx",
-              "RelativeToolTip": "DAWSistema\\Vehiculos.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-06-08T14:44:05.728Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Vehiculos.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\Vehiculos.aspx.cs",
-              "RelativeDocumentMoniker": "DAWSistema\\Vehiculos.aspx.cs",
-              "ToolTip": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\Vehiculos.aspx.cs",
-              "RelativeToolTip": "DAWSistema\\Vehiculos.aspx.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAA4wGAAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "CambiarClave.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\CambiarClave.aspx.cs",
+              "RelativeDocumentMoniker": "DAWSistema\\CambiarClave.aspx.cs",
+              "ToolTip": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\CambiarClave.aspx.cs",
+              "RelativeToolTip": "DAWSistema\\CambiarClave.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T14:44:30.686Z",
+              "WhenOpened": "2026-07-08T16:54:29.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CambiarClave.aspx",
+              "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\CambiarClave.aspx",
+              "RelativeDocumentMoniker": "DAWSistema\\CambiarClave.aspx",
+              "ToolTip": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\CambiarClave.aspx",
+              "RelativeToolTip": "DAWSistema\\CambiarClave.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-08T16:54:24.072Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "ReservaBE.cs",
-              "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\BE\\ReservaBE.cs",
-              "RelativeDocumentMoniker": "BE\\ReservaBE.cs",
-              "ToolTip": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\BE\\ReservaBE.cs",
-              "RelativeToolTip": "BE\\ReservaBE.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T13:20:08.781Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UsuarioBE.cs",
-              "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\BE\\UsuarioBE.cs",
-              "RelativeDocumentMoniker": "BE\\UsuarioBE.cs",
-              "ToolTip": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\BE\\UsuarioBE.cs",
-              "RelativeToolTip": "BE\\UsuarioBE.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T16:12:02.828Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Inicio.aspx",
-              "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\Inicio.aspx",
-              "RelativeDocumentMoniker": "DAWSistema\\Inicio.aspx",
-              "ToolTip": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\Inicio.aspx",
-              "RelativeToolTip": "DAWSistema\\Inicio.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-06-08T14:51:16.593Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Inicio.aspx.cs",
               "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\Inicio.aspx.cs",
               "RelativeDocumentMoniker": "DAWSistema\\Inicio.aspx.cs",
               "ToolTip": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\Inicio.aspx.cs",
               "RelativeToolTip": "DAWSistema\\Inicio.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T14:51:37.483Z",
+              "WhenOpened": "2026-07-08T16:50:22.858Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Principal.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\Principal.aspx.cs",
-              "RelativeDocumentMoniker": "DAWSistema\\Principal.aspx.cs",
-              "ToolTip": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\Principal.aspx.cs",
-              "RelativeToolTip": "DAWSistema\\Principal.aspx.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAkwCQAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T12:51:21.149Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MisReservas.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\MisReservas.aspx.cs",
-              "RelativeDocumentMoniker": "DAWSistema\\MisReservas.aspx.cs",
-              "ToolTip": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\MisReservas.aspx.cs",
-              "RelativeToolTip": "DAWSistema\\MisReservas.aspx.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAiwEEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T13:37:38.634Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 8,
               "Title": "Login.aspx",
               "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\Login.aspx",
               "RelativeDocumentMoniker": "DAWSistema\\Login.aspx",
@@ -248,7 +130,111 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Login.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\Login.aspx.cs",
+              "RelativeDocumentMoniker": "DAWSistema\\Login.aspx.cs",
+              "ToolTip": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\Login.aspx.cs",
+              "RelativeToolTip": "DAWSistema\\Login.aspx.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwC0AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-30T16:13:58.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "Vehiculos.aspx",
+              "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\Vehiculos.aspx",
+              "RelativeDocumentMoniker": "DAWSistema\\Vehiculos.aspx",
+              "ToolTip": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\Vehiculos.aspx",
+              "RelativeToolTip": "DAWSistema\\Vehiculos.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-06-08T14:44:05.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Principal.aspx",
+              "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\Principal.aspx",
+              "RelativeDocumentMoniker": "DAWSistema\\Principal.aspx",
+              "ToolTip": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\Principal.aspx",
+              "RelativeToolTip": "DAWSistema\\Principal.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-06-01T03:14:40.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Principal.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\Principal.aspx.cs",
+              "RelativeDocumentMoniker": "DAWSistema\\Principal.aspx.cs",
+              "ToolTip": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\Principal.aspx.cs",
+              "RelativeToolTip": "DAWSistema\\Principal.aspx.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAiwFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T12:51:21.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsuarioMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAL\\UsuarioMapper.cs",
+              "RelativeDocumentMoniker": "DAL\\UsuarioMapper.cs",
+              "ToolTip": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAL\\UsuarioMapper.cs",
+              "RelativeToolTip": "DAL\\UsuarioMapper.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAcwD4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-30T16:12:39.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UsuarioGestor.cs",
+              "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\BLL\\UsuarioGestor.cs",
+              "RelativeDocumentMoniker": "BLL\\UsuarioGestor.cs",
+              "ToolTip": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\BLL\\UsuarioGestor.cs",
+              "RelativeToolTip": "BLL\\UsuarioGestor.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAiwDsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-30T16:13:21.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Inicio.aspx",
+              "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\Inicio.aspx",
+              "RelativeDocumentMoniker": "DAWSistema\\Inicio.aspx",
+              "ToolTip": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\Inicio.aspx",
+              "RelativeToolTip": "DAWSistema\\Inicio.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-06-08T14:51:16.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MisReservas.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\MisReservas.aspx.cs",
+              "RelativeDocumentMoniker": "DAWSistema\\MisReservas.aspx.cs",
+              "ToolTip": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\MisReservas.aspx.cs",
+              "RelativeToolTip": "DAWSistema\\MisReservas.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-08T13:37:38.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "MisReservas.aspx",
               "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\MisReservas.aspx",
               "RelativeDocumentMoniker": "DAWSistema\\MisReservas.aspx",
@@ -261,171 +247,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "BitacoraBE.cs",
-              "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\BE\\BitacoraBE.cs",
-              "RelativeDocumentMoniker": "BE\\BitacoraBE.cs",
-              "ToolTip": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\BE\\BitacoraBE.cs",
-              "RelativeToolTip": "BE\\BitacoraBE.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T03:07:20.668Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Vehiculo.cs",
-              "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\BE\\Vehiculo.cs",
-              "RelativeDocumentMoniker": "BE\\Vehiculo.cs",
-              "ToolTip": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\BE\\Vehiculo.cs",
-              "RelativeToolTip": "BE\\Vehiculo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T16:11:49.848Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Bitacora.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\Bitacora.aspx.cs",
-              "RelativeDocumentMoniker": "DAWSistema\\Bitacora.aspx.cs",
-              "ToolTip": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\Bitacora.aspx.cs",
-              "RelativeToolTip": "DAWSistema\\Bitacora.aspx.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAADwv0AAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T03:13:11.35Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "ReservaMapper.cs",
-              "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAL\\ReservaMapper.cs",
-              "RelativeDocumentMoniker": "DAL\\ReservaMapper.cs",
-              "ToolTip": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAL\\ReservaMapper.cs",
-              "RelativeToolTip": "DAL\\ReservaMapper.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAiwDUAAAAAAAAAAAAAAA==",
+              "Title": "Vehiculos.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\Vehiculos.aspx.cs",
+              "RelativeDocumentMoniker": "DAWSistema\\Vehiculos.aspx.cs",
+              "ToolTip": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\Vehiculos.aspx.cs",
+              "RelativeToolTip": "DAWSistema\\Vehiculos.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T13:21:01.736Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ReservaGestor.cs",
-              "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\BLL\\ReservaGestor.cs",
-              "RelativeDocumentMoniker": "BLL\\ReservaGestor.cs",
-              "ToolTip": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\BLL\\ReservaGestor.cs",
-              "RelativeToolTip": "BLL\\ReservaGestor.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA6wCwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T13:21:44.438Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Login.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\Login.aspx.cs",
-              "RelativeDocumentMoniker": "DAWSistema\\Login.aspx.cs",
-              "ToolTip": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\Login.aspx.cs",
-              "RelativeToolTip": "DAWSistema\\Login.aspx.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAswDEAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T16:13:58.203Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "BitacoraMapper.cs",
-              "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAL\\BitacoraMapper.cs",
-              "RelativeDocumentMoniker": "DAL\\BitacoraMapper.cs",
-              "ToolTip": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAL\\BitacoraMapper.cs",
-              "RelativeToolTip": "DAL\\BitacoraMapper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAB0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T03:10:11.28Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "UsuarioMapper.cs",
-              "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAL\\UsuarioMapper.cs",
-              "RelativeDocumentMoniker": "DAL\\UsuarioMapper.cs",
-              "ToolTip": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAL\\UsuarioMapper.cs",
-              "RelativeToolTip": "DAL\\UsuarioMapper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T16:12:39.434Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "VehiculoMapper.cs",
-              "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAL\\VehiculoMapper.cs",
-              "RelativeDocumentMoniker": "DAL\\VehiculoMapper.cs",
-              "ToolTip": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAL\\VehiculoMapper.cs",
-              "RelativeToolTip": "DAL\\VehiculoMapper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T03:10:25.346Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Bitacora.aspx",
-              "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\Bitacora.aspx",
-              "RelativeDocumentMoniker": "DAWSistema\\Bitacora.aspx",
-              "ToolTip": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\DAWSistema\\Bitacora.aspx",
-              "RelativeToolTip": "DAWSistema\\Bitacora.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-06-01T03:10:35.604Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "VehiculoGestor.cs",
-              "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\BLL\\VehiculoGestor.cs",
-              "RelativeDocumentMoniker": "BLL\\VehiculoGestor.cs",
-              "ToolTip": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\BLL\\VehiculoGestor.cs",
-              "RelativeToolTip": "BLL\\VehiculoGestor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T03:09:05.714Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "UsuarioGestor.cs",
-              "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\BLL\\UsuarioGestor.cs",
-              "RelativeDocumentMoniker": "BLL\\UsuarioGestor.cs",
-              "ToolTip": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\BLL\\UsuarioGestor.cs",
-              "RelativeToolTip": "BLL\\UsuarioGestor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T16:13:21.069Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "BitacoraGestor.cs",
-              "DocumentMoniker": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\BLL\\BitacoraGestor.cs",
-              "RelativeDocumentMoniker": "BLL\\BitacoraGestor.cs",
-              "ToolTip": "C:\\Users\\Aru\\OneDrive\\Desktop\\DAWSistema\\BLL\\BitacoraGestor.cs",
-              "RelativeToolTip": "BLL\\BitacoraGestor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T03:07:46.772Z",
+              "WhenOpened": "2026-06-08T14:44:30.686Z",
               "EditorCaption": ""
             }
           ]

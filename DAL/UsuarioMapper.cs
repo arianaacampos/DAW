@@ -49,5 +49,17 @@ namespace DAL
                 cmd.ExecuteNonQuery();
             }
         }
+        public void ActualizarPassword(string username, string nuevaClave)
+        {
+            using (System.Data.SqlClient.SqlConnection conn = new System.Data.SqlClient.SqlConnection(cadenaConexion))
+            {
+                string query = "UPDATE Usuarios SET Password = @clave WHERE Username = @user";
+                System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@clave", nuevaClave);
+                cmd.Parameters.AddWithValue("@user", username);
+                conn.Open();
+                cmd.ExecuteNonQuery();
+            }
+        }
     }
 }

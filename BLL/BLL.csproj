@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="BitacoraGestor.cs" />
     <Compile Include="ReservaGestor.cs" />
+    <Compile Include="SeguridadGestor.cs" />
     <Compile Include="UsuarioGestor.cs" />
     <Compile Include="VehiculoGestor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

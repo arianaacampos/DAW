@@ -108,7 +108,7 @@
                     <a href="Vehiculos.aspx" style="margin-left: 15px;">Flota</a>
                 </div>
             </div>
-            <asp:Button ID="btnIrLogin" runat="server" Text="👤 Iniciar Sesión" CssClass="btn-login" OnClick="btnIrLogin_Click" />
+          <asp:Button ID="btnIrLogin" runat="server" Text="👤 Iniciar Sesión" CssClass="btn-login" OnClick="btnIrLogin_Click" formnovalidate="formnovalidate" CausesValidation="false" />
         </nav>
 
         <div class="hero">
