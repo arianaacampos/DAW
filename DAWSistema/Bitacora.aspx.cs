@@ -1,4 +1,5 @@
 ﻿using BE;
+using BLL;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -14,56 +15,55 @@ namespace DAWSistema
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-             if (SessionManager.GetInstance.Usuario == null)
-                {
-                Response.Redirect("Login.aspx");
-            }
+            if (SessionManager.GetInstance.Usuario == null) Response.Redirect("Login.aspx");
 
             if (!IsPostBack)
             {
-                CargarBitacora();
+                CargarBitacora("", "", "", "Todos");
             }
         }
 
-        private void CargarBitacora()
+        protected void btnFiltrar_Click(object sender, EventArgs e)
         {
-            // Ajustá la cadena de conexión si tu servidor se llama distinto
-            string cadenaConexion = "Data Source=.;Initial Catalog=DAW;Integrated Security=True;Encrypt=False;";
+            string desde = txtFechaDesde.Text;
+            string hasta = txtFechaHasta.Text;
+            string usuario = txtFiltroUsuario.Text.Trim();
+            string accion = ddlFiltroAccion.SelectedValue;
 
-            using (SqlConnection conn = new SqlConnection(cadenaConexion))
-            {
-                // Traemos los datos de la BD
-                string query = "SELECT FechaHora AS Fecha, Usuario, Accion FROM Bitacora ORDER BY FechaHora DESC";
-                SqlDataAdapter da = new SqlDataAdapter(query, conn);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-
-                // MAGIA: Agregamos una columna nueva al DataTable "al vuelo" para la Criticidad
-                dt.Columns.Add("Criticidad", typeof(string));
-
-                // Recorremos las filas para clasificar si fue un éxito o un fallo
-                foreach (DataRow fila in dt.Rows)
-                {
-                    string accion = fila["Accion"].ToString().ToLower();
-
-                    // Si la acción contiene la palabra "fallo" o "error"
-                    if (accion.Contains("fallo") || accion.Contains("error"))
-                    {
-                        // Le clavamos la etiqueta roja (clase status-fallo)
-                        fila["Criticidad"] = "<span class='status-badge status-fallo'>Fallo</span>";
-                    }
-                    else
-                    {
-                        // Si no, le clavamos la etiqueta verde (clase status-exito)
-                        fila["Criticidad"] = "<span class='status-badge status-exito'>Éxito</span>";
-                    }
-                }
-
-                // Vinculamos la tabla a la grilla
-                dgvBitacora.DataSource = dt;
-                dgvBitacora.DataBind();
-            }
+            CargarBitacora(desde, hasta, usuario, accion);
         }
 
+        protected void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtFechaDesde.Text = "";
+            txtFechaHasta.Text = "";
+            txtFiltroUsuario.Text = "";
+            ddlFiltroAccion.SelectedValue = "Todos";
+
+            CargarBitacora("", "", "", "Todos");
+        }
+
+        private void CargarBitacora(string desde, string hasta, string usuario, string accion)
+        {
+            BitacoraGestor gestor = new BitacoraGestor();
+            // Le pasamos los 4 filtros a la BLL
+            DataTable dt = gestor.ObtenerHistorialAvanzado(desde, hasta, usuario, accion);
+
+            dt.Columns.Add("Criticidad", typeof(string));
+
+            foreach (DataRow fila in dt.Rows)
+            {
+                string accionTexto = fila["Accion"].ToString().ToLower();
+
+                if (accionTexto.Contains("fallo") || accionTexto.Contains("error"))
+                    fila["Criticidad"] = "<span class='status-badge status-fallo'>Fallo</span>";
+                else
+                    fila["Criticidad"] = "<span class='status-badge status-exito'>Éxito</span>";
+            }
+
+            dgvBitacora.DataSource = dt;
+            dgvBitacora.DataBind();
+        }
     }
+
 }

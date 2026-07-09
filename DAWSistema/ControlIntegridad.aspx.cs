@@ -17,13 +17,20 @@ namespace DAWSistema
 
             if (!IsPostBack)
             {
-                if (SessionManager.GetInstance.Usuario.ToLower() == "master")
+                string rol = SessionManager.GetInstance.Rol;
+
+                // 🔥 Validamos contra el ROL, no contra el nombre
+                if (rol == "WebMaster")
                 {
                     panelMaster.Visible = true;
-                    if (Session["ErrorIntegridad"] != null) lblDetalleError.Text = Session["ErrorIntegridad"].ToString();
+                    panelBloqueado.Visible = false;
+
+                    if (Session["ErrorIntegridad"] != null)
+                        lblDetalleError.Text = Session["ErrorIntegridad"].ToString();
                 }
                 else
                 {
+                    panelMaster.Visible = false;
                     panelBloqueado.Visible = true;
                 }
             }
@@ -32,7 +39,8 @@ namespace DAWSistema
         {
             SeguridadGestor gestor = new SeguridadGestor();
             gestor.RecalcularDigitos();
-            // Lo mandamos al panel principal limpio
+
+            // Listo, arreglado. Lo dejamos entrar al menú principal.
             Response.Redirect("Principal.aspx");
         }
 
@@ -45,8 +53,27 @@ namespace DAWSistema
         // BOTÓN 2: RESTORE
         protected void btnRestore_Click(object sender, EventArgs e)
         {
-            // Lo mandamos a la pantalla de Backup/Restore que hicimos antes
-            Response.Redirect("Seguridad.aspx");
+            try
+            {
+                if (!fuRestore.HasFile)
+                {
+                    ClientScript.RegisterStartupScript(this.GetType(), "Alerta", "alert('⚠️ Por favor seleccioná un archivo .bak');", true);
+                    return;
+                }
+
+                // Guardamos el backup temporalmente y lo restauramos
+                string rutaTemporal = @"C:\Backups\RestoreEmergencia.bak";
+                fuRestore.SaveAs(rutaTemporal);
+
+                SeguridadGestor gestor = new SeguridadGestor();
+                gestor.HacerRestore(rutaTemporal, SessionManager.GetInstance.Usuario);
+
+                ClientScript.RegisterStartupScript(this.GetType(), "Ok", "alert('✅ ¡Sistema restaurado! Ahora podés ingresar normalmente.'); window.location.href='Principal.aspx';", true);
+            }
+            catch (Exception ex)
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "Error", $"alert('❌ Error al restaurar: {ex.Message}');", true);
+            }
         }
 
 

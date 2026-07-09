@@ -10,52 +10,56 @@ namespace DAL
 {
     public class UsuarioMapper
     {
-        private string cadenaConexion = "Data Source=.;Initial Catalog=DAW;Integrated Security=True;Encrypt=False;";
-        public UsuarioBE ObtenerPorUsername(string username)
+        private string chain = "Data Source=.;Initial Catalog=DAW;Integrated Security=True;Encrypt=False;";
+
+        public UsuarioBE ObtenerUsuario(string username)
         {
-            UsuarioBE user = null;
-            using (SqlConnection conn = new SqlConnection(cadenaConexion))
+            using (SqlConnection conn = new SqlConnection(chain))
             {
-                string query = "SELECT * FROM Usuarios WHERE Username = @user";
+                string query = "SELECT ID, Username, Password, IntentosFallidos, Bloqueado, Rol FROM Usuarios WHERE Username = @user";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@user", username);
-
                 conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
-                if (reader.Read())
+
+                using (SqlDataReader reader = cmd.ExecuteReader())
                 {
-                    user = new UsuarioBE();
-                    user.ID = (int)reader["ID"];
-                    user.Username = reader["Username"].ToString();
-                    user.Password = reader["Password"].ToString();
-                    user.IntentosFallidos = (int)reader["IntentosFallidos"];
-                    user.Bloqueado = (bool)reader["Bloqueado"];
-                    user.Rol = reader["Rol"].ToString();
+                    if (reader.Read())
+                    {
+                        UsuarioBE user = new UsuarioBE();
+                        user.ID = Convert.ToInt32(reader["ID"]);
+                        user.Username = reader["Username"].ToString();
+                        user.Password = reader["Password"].ToString(); // Esta password ahora es el Hash
+                        user.IntentosFallidos = Convert.ToInt32(reader["IntentosFallidos"]);
+                        user.Bloqueado = Convert.ToBoolean(reader["Bloqueado"]);
+                        user.Rol = reader["Rol"].ToString(); // 🔥 TRAEMOS EL ROL REAL
+                        return user;
+                    }
                 }
+                return null;
             }
-            return user;
         }
+
         public void ActualizarIntentos(string username, int intentos, bool bloqueado)
         {
-            using (SqlConnection conn = new SqlConnection(cadenaConexion))
+            using (SqlConnection conn = new SqlConnection(chain))
             {
-                string query = "UPDATE Usuarios SET IntentosFallidos = @intentos, Bloqueado = @bloqueado WHERE Username = @user";
+                string query = "UPDATE Usuarios SET IntentosFallidos = @int, Bloqueado = @bloq WHERE Username = @user";
                 SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@intentos", intentos);
-                cmd.Parameters.AddWithValue("@bloqueado", bloqueado);
+                cmd.Parameters.AddWithValue("@int", intentos);
+                cmd.Parameters.AddWithValue("@bloq", bloqueado);
                 cmd.Parameters.AddWithValue("@user", username);
-
                 conn.Open();
                 cmd.ExecuteNonQuery();
             }
         }
-        public void ActualizarPassword(string username, string nuevaClave)
+
+        public void ActualizarPassword(string username, string hashPassword)
         {
-            using (System.Data.SqlClient.SqlConnection conn = new System.Data.SqlClient.SqlConnection(cadenaConexion))
+            using (SqlConnection conn = new SqlConnection(chain))
             {
-                string query = "UPDATE Usuarios SET Password = @clave WHERE Username = @user";
-                System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@clave", nuevaClave);
+                string query = "UPDATE Usuarios SET Password = @pass WHERE Username = @user";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@pass", hashPassword);
                 cmd.Parameters.AddWithValue("@user", username);
                 conn.Open();
                 cmd.ExecuteNonQuery();

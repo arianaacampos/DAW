@@ -8,7 +8,7 @@
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         body { background-color: #f4f7f6; color: #333; display: flex; height: 100vh; overflow: hidden; }
         
-        /* Barra Lateral (Igual a la principal) */
+        /* Barra Lateral */
         .sidebar { width: 260px; background-color: #ffffff; border-right: 1px solid #e0e0e0; display: flex; flex-direction: column; padding: 20px 0; }
         .logo { padding: 0 20px 30px 20px; font-size: 1.5rem; font-weight: bold; color: #333; display: flex; align-items: center; gap: 10px; }
         .logo-icon { color: #8B0000; font-size: 1.8rem; }
@@ -19,14 +19,13 @@
 
         /* Contenido Principal */
         .main-content { flex: 1; padding: 40px 50px; overflow-y: auto; display: flex; flex-direction: column; }
-        
-        /* Encabezado */
         .header-bitacora { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 30px; }
         .header-text h1 { font-size: 2rem; color: #111; margin-bottom: 5px; font-weight: bold; }
         .header-text p { color: #777; font-size: 1rem; }
         .header-actions { display: flex; gap: 10px; }
-        .btn-export { background-color: #8B0000; color: white; border: none; padding: 10px 20px; border-radius: 8px; font-weight: bold; cursor: pointer; }
-        .btn-filter { background-color: white; border: 1px solid #ccc; padding: 10px 20px; border-radius: 8px; font-weight: bold; cursor: pointer; color: #333; }
+        
+        .btn-filter { background-color: white; border: 1px solid #ccc; padding: 10px 20px; border-radius: 8px; font-weight: bold; cursor: pointer; color: #333; outline: none; }
+        .btn-filter.primary { background-color: #8B0000; color: white; border: none; }
 
         /* Tarjetas de Resumen (KPIs) */
         .kpi-container { display: flex; gap: 20px; margin-bottom: 30px; }
@@ -40,15 +39,13 @@
 
         /* Contenedor de la Tabla */
         .table-container { background-color: white; border-radius: 12px; border: 1px solid #eaeaea; overflow: hidden; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.02); }
-        
-        /* Grilla (GridView) */
         .grid-view { width: 100%; border-collapse: collapse; text-align: left; }
         .grid-view th { color: #888; font-size: 0.85rem; padding: 15px; border-bottom: 2px solid #f0f0f0; text-transform: uppercase; }
         .grid-view td { padding: 15px; border-bottom: 1px solid #f4f4f4; color: #444; font-size: 0.95rem; }
         .grid-view tr:last-child td { border-bottom: none; }
         .grid-view tr:hover { background-color: #fafafa; }
 
-        /* Etiquetas de Criticidad (Badges generados desde C#) */
+        /* Etiquetas de Criticidad */
         .status-badge { padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; }
         .status-exito { background-color: #e8f5e9; color: #2e7d32; border: 1px solid #c8e6c9; }
         .status-fallo { background-color: #ffebee; color: #c62828; border: 1px solid #ffcdd2; }
@@ -73,10 +70,24 @@
                     <h1>Bitácora del Sistema</h1>
                     <p>Registro de eventos, accesos y actividades de los usuarios.</p>
                 </div>
-                <div class="header-actions">
-                    <button type="button" class="btn-filter">⚙️ Filtrar</button>
-                    <button type="button" class="btn-export">Exportar Registro</button>
-                </div>
+               <div class="header-actions" style="flex-wrap: wrap; gap: 10px; align-items: center; background: white; padding: 15px; border-radius: 8px; border: 1px solid #eaeaea;">
+    <span style="font-size: 0.85rem; font-weight: bold; color: #888;">FILTROS:</span>
+    
+    <asp:TextBox ID="txtFechaDesde" runat="server" TextMode="Date" CssClass="btn-filter" ToolTip="Fecha Desde"></asp:TextBox>
+    <asp:TextBox ID="txtFechaHasta" runat="server" TextMode="Date" CssClass="btn-filter" ToolTip="Fecha Hasta"></asp:TextBox>
+    
+    <asp:TextBox ID="txtFiltroUsuario" runat="server" CssClass="btn-filter" placeholder="Usuario..."></asp:TextBox>
+    
+    <asp:DropDownList ID="ddlFiltroAccion" runat="server" CssClass="btn-filter">
+        <asp:ListItem Text="Todos los eventos" Value="Todos"></asp:ListItem>
+        <asp:ListItem Text="Logins" Value="Login"></asp:ListItem>
+        <asp:ListItem Text="Reservas" Value="Reserva"></asp:ListItem>
+        <asp:ListItem Text="Fallos y Errores" Value="Fallo"></asp:ListItem>
+    </asp:DropDownList>
+
+    <asp:Button ID="btnFiltrar" runat="server" Text="🔍 Filtrar" CssClass="btn-filter primary" OnClick="btnFiltrar_Click" />
+    <asp:Button ID="btnLimpiar" runat="server" Text="✖ Limpiar" CssClass="btn-filter" OnClick="btnLimpiar_Click" />
+</div>
             </div>
 
             <div class="kpi-container">
@@ -100,13 +111,10 @@
                         <asp:BoundField DataField="Fecha" HeaderText="FECHA Y HORA" />
                         <asp:BoundField DataField="Usuario" HeaderText="USUARIO" />
                         <asp:BoundField DataField="Accion" HeaderText="EVENTO" />
-                        
-                        <%-- Columna especial para la criticidad (HtmlEncode="false" permite inyectar el diseño CSS) --%>
                         <asp:BoundField DataField="Criticidad" HeaderText="ESTADO" HtmlEncode="false" />
                     </Columns>
                 </asp:GridView>
             </div>
-
         </main>
     </form>
 </body>

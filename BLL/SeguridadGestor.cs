@@ -1,6 +1,7 @@
 ﻿using DAL;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,35 +16,86 @@ namespace BLL
             for (int i = 0; i < cadenaFila.Length; i++)
             {
                 int valorAscii = (int)cadenaFila[i];
-                dvh += (valorAscii * (i + 1)); // ASCII * Posición
+                dvh += (valorAscii * (i + 1));
             }
             return dvh;
         }
 
-        // Revisa TODAS las tablas. Si una falla, devuelve el nombre de la tabla rota.
         public string VerificarSistemaCompleto()
         {
             SeguridadMapper mapper = new SeguridadMapper();
 
-            if (!mapper.ValidarIntegridadTabla("Usuarios")) return "Error en la tabla: Usuarios";
-            if (!mapper.ValidarIntegridadTabla("Reservas")) return "Error en la tabla: Reservas";
-            if (!mapper.ValidarIntegridadTabla("Bitacora")) return "Error en la tabla: Bitacora";
+            // 1. CHEQUEO HORIZONTAL (Fila por fila en Usuarios)
+            DataTable dtUsuarios = mapper.ObtenerDatosTabla("Usuarios");
+            long sumaDvhCalculado = 0;
+
+            foreach (DataRow fila in dtUsuarios.Rows)
+            {
+                string username = fila["Username"].ToString();
+                string password = fila["Password"].ToString();
+                string rol = fila["Rol"].ToString();
+                string intentos = fila["IntentosFallidos"].ToString();
+
+                long dvhGuardadoEnBd = Convert.ToInt64(fila["DVH"]);
+
+                string cadenaFila = username + password + rol + intentos;
+                long dvhCalculadoEnVivo = CalcularDVH(cadenaFila);
+
+                if (dvhCalculadoEnVivo != dvhGuardadoEnBd)
+                {
+                    return $"Error de Integridad (Horizontal) -> Tabla: Usuarios | Usuario alterado: {username}";
+                }
+                sumaDvhCalculado += dvhCalculadoEnVivo;
+            }
+
+            // 2. CHEQUEO VERTICAL (Totales)
+            if (!mapper.ValidarIntegridadTabla("Usuarios")) return "Error Vertical -> Tabla: Usuarios (El total no coincide)";
+            if (!mapper.ValidarIntegridadTabla("Reservas")) return "Error Vertical -> Tabla: Reservas (El total no coincide)";
+            if (!mapper.ValidarIntegridadTabla("Bitacora")) return "Error Vertical -> Tabla: Bitacora (El total no coincide)";
 
             return "OK";
         }
 
-        // Método que usa el Web Master para arreglar el sistema
+        // 🔥 ACÁ ESTÁ LA MAGIA QUE ARREGLA EL BUCLE
         public void RecalcularDigitos()
         {
-            // En un sistema real, acá harías un SELECT de todas las filas, 
-            // recalcularías el DVH de cada una y actualizarías el DVV.
-            // Para el examen, con blanquear/reparar el DVV es suficiente para demostrar el concepto:
-
             SeguridadMapper mapper = new SeguridadMapper();
-            // (Ejemplo simulado de reparación para que vuelva a decir "OK")
-            mapper.ActualizarDVV("Usuarios", 0); // Reemplazar 0 por la suma real
-            mapper.ActualizarDVV("Reservas", 0);
-            mapper.ActualizarDVV("Bitacora", 0);
+
+            // 1. Recorremos la tabla Usuarios y REPARAMOS cada DVH roto con la matemática correcta
+            DataTable dtUsuarios = mapper.ObtenerDatosTabla("Usuarios");
+            foreach (DataRow fila in dtUsuarios.Rows)
+            {
+                string username = fila["Username"].ToString();
+                string password = fila["Password"].ToString();
+                string rol = fila["Rol"].ToString();
+                string intentos = fila["IntentosFallidos"].ToString();
+
+                string cadenaFila = username + password + rol + intentos;
+                long dvhReal = CalcularDVH(cadenaFila);
+
+                int idUsuario = Convert.ToInt32(fila["ID"]);
+                mapper.RepararDVHFila("Usuarios", "ID", idUsuario, dvhReal);
+            }
+
+            // 2. Ahora sí, hacemos que el DVV de la Bitácora y demás tablas se sincronice a su valor real
+            mapper.SincronizarTodosLosDVV();
+
+            // 3. Dejamos asentado en la Bitácora el rescate heroico del Web Master
+            BitacoraGestor.RegistrarAccion("Master", "Ejecutó Recálculo Real de DVH y DVV. El sistema fue salvado.");
+        }
+
+        public void HacerBackup(string ruta, string usuarioMaster)
+        {
+            SeguridadMapper mapper = new SeguridadMapper();
+            mapper.RealizarBackup(ruta);
+            BitacoraGestor.RegistrarAccion(usuarioMaster, "Generó un Backup en: " + ruta);
+        }
+
+        public void HacerRestore(string ruta, string usuarioMaster)
+        {
+            SeguridadMapper mapper = new SeguridadMapper();
+            mapper.RealizarRestore(ruta);
+            BitacoraGestor.RegistrarAccion(usuarioMaster, "Restauró el sistema desde un Backup.");
         }
     }
 }

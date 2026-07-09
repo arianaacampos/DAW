@@ -15,19 +15,32 @@ namespace DAWSistema
         {
             if (!IsPostBack)
             {
-                if (SessionManager.GetInstance.Usuario == null)
-                {
-                    btnAcceso.Text = "🏠 Volver al Panel (" + SessionManager.GetInstance.Usuario + ")";
-                }
-                else
-                {
-                    btnAcceso.Text = "👤 Iniciar Sesión";
-                }
+                ConfigurarBarraSuperior();
+            }
+        }
+        private void ConfigurarBarraSuperior()
+        {
+            if (SessionManager.GetInstance.Usuario == null)
+            {
+                // Usuario sin loguear: Mostramos el botón de Iniciar Sesión normal
+                btnAcceso.Text = "👤 Iniciar Sesión";
+                btnSalir.Visible = false;
+                linkPanel.Visible = false;
+            }
+            else
+            {
+                // Ya inició sesión: Le cambiamos el texto y mostramos Cerrar Sesión
+                string usuario = SessionManager.GetInstance.Usuario;
+                btnAcceso.Text = $"🏠 Mi Panel ({usuario})";
+                btnSalir.Visible = true;
+                linkPanel.Visible = true;
             }
         }
 
         protected void btnAcceso_Click(object sender, EventArgs e)
         {
+            // Este botón tiene doble función:
+            // Si está logueado, lo lleva a su panel. Si no, al login.
             if (SessionManager.GetInstance.Usuario != null)
             {
                 Response.Redirect("Principal.aspx");
@@ -37,46 +50,33 @@ namespace DAWSistema
                 Response.Redirect("Login.aspx");
             }
         }
-        protected void btnResPeugeot_Click(object sender, EventArgs e)
+
+        protected void btnSalir_Click(object sender, EventArgs e)
         {
-            ProcesarReserva("Peugeot 208 Allure");
+            // Cierra la sesión con el Singleton
+            SessionManager.GetInstance.Logout();
+            Response.Redirect("Inicio.aspx");
         }
 
-        protected void btnResCorolla_Click(object sender, EventArgs e)
-        {
-            ProcesarReserva("Toyota Corolla Cross XLI");
-        }
-
-        protected void btnResFrontier_Click(object sender, EventArgs e)
-        {
-            ProcesarReserva("Nissan Frontier S");
-        }
-
-        protected void btnResHiace_Click(object sender, EventArgs e)
-        {
-            ProcesarReserva("Toyota Hiace AT (9 Pasajeros)");
-        }
-
-        protected void btnResVirtus_Click(object sender, EventArgs e)
-        {
-            ProcesarReserva("Volkswagen Virtus MSI");
-        }
-        protected void btnMisReservas_Click(object sender, EventArgs e)
-        {
-            if (SessionManager.GetInstance.Usuario != null) Response.Redirect("MisReservas.aspx");
-            else Response.Redirect("Login.aspx");
-        }
+        // ==========================================
+        // RESERVAS
+        // ==========================================
+        protected void btnResPeugeot_Click(object sender, EventArgs e) { ProcesarReserva("Peugeot 208 Allure"); }
+        protected void btnResCorolla_Click(object sender, EventArgs e) { ProcesarReserva("Toyota Corolla Cross"); }
+        protected void btnResFrontier_Click(object sender, EventArgs e) { ProcesarReserva("Nissan Frontier S"); }
+        protected void btnResHiace_Click(object sender, EventArgs e) { ProcesarReserva("Toyota Hiace AT"); }
+        protected void btnResVirtus_Click(object sender, EventArgs e) { ProcesarReserva("Volkswagen Virtus MSI"); }
 
         private void ProcesarReserva(string modeloVehiculo)
         {
-            // 1. Validamos que haya pasado por el Inicio a elegir fechas
+            // 1. Validamos que haya elegido fechas en el inicio
             if (Session["FechaInicio"] == null)
             {
                 ClientScript.RegisterStartupScript(this.GetType(), "Alerta", "alert('⚠️ Primero tenés que elegir las fechas de tu viaje.'); window.location='Inicio.aspx';", true);
                 return;
             }
 
-            // 2. Si no está logueado, le avisamos y lo mandamos a loguearse
+            // 2. Si no inició sesión, cartel y redirección al login
             if (SessionManager.GetInstance.Usuario == null)
             {
                 string scriptLogin = "alert('⚠️ ¡Casi listo! Iniciá sesión o registrate para confirmar la reserva.'); window.location.href='Login.aspx';";
@@ -84,14 +84,13 @@ namespace DAWSistema
                 return;
             }
 
-            // 3. Si ya eligió fecha y está logueado, ¡RESERVAMOS DIRECTO!
+            // 3. Reserva directa guardada en la base de datos
             string usuarioLogueado = SessionManager.GetInstance.Usuario;
             DateTime fechaSeleccionada = Convert.ToDateTime(Session["FechaInicio"].ToString());
 
             ReservaGestor gestor = new ReservaGestor();
             gestor.RegistrarReserva(usuarioLogueado, modeloVehiculo, fechaSeleccionada);
 
-            // Lo mandamos a su panel de Mis Reservas para que vea que se guardó
             string scriptExito = $"alert('¡Felicidades! Reservaste tu {modeloVehiculo}.'); window.location.href='MisReservas.aspx';";
             ClientScript.RegisterStartupScript(this.GetType(), "PopupReserva", scriptExito, true);
         }

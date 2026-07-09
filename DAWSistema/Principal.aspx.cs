@@ -14,35 +14,39 @@ namespace DAWSistema
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            if (SessionManager.GetInstance.Usuario == null)
-            {
-                Response.Redirect("Login.aspx");
-            }
+            if (SessionManager.GetInstance.Usuario == null) Response.Redirect("Login.aspx");
 
             if (!IsPostBack)
             {
-                // 🔥 Leemos con Singleton
                 string usuario = SessionManager.GetInstance.Usuario;
-                lblUsuario.Text = usuario;
-                lblUsuarioSidebar.Text = usuario;
+                string rol = SessionManager.GetInstance.Rol; // 🔥 ACÁ TENEMOS EL ROL OFICIAL DE SQL
 
+                lblUsuario.Text = usuario;
+                lblUsuarioSidebar.Text = usuario + " (" + rol + ")";
+
+                // Apagamos todo por defecto
                 cardFlota.Visible = false;
                 cardBitacora.Visible = false;
                 cardSeguridad.Visible = false;
                 linkBitacora.Visible = false;
 
-                if (usuario.ToLower() == "juan")
+                // ==========================================
+                // CONTROL DE ROLES BASADO EN BASE DE DATOS
+                // ==========================================
+                if (rol == "Cliente")
                 {
-                    // Usuario normal: Solo reservas (la tarjeta de clave ya es fija para todos)
+                    // Juan entra acá. Solo ve Reservas y Cambiar Clave (que siempre está visible)
                 }
-                else if (usuario.ToLower() == "admin")
+                else if (rol == "Administrador")
                 {
+
                     cardFlota.Visible = true;
                     cardBitacora.Visible = true;
                     linkBitacora.Visible = true;
                 }
-                else if (usuario.ToLower() == "master")
+                else if (rol == "WebMaster")
                 {
+ 
                     cardBitacora.Visible = true;
                     linkBitacora.Visible = true;
                     cardSeguridad.Visible = true;
@@ -83,5 +87,15 @@ namespace DAWSistema
             Response.Redirect("CambiarClave.aspx");
         }
 
+        protected void btnABMFlota_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("FlotaABM.aspx");
+        }
+
+        // 🔥 ESTE REDIRIGE AL MASTER AL BACKUP
+        protected void btnSeguridad_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Seguridad.aspx");
+        }
     }
 }

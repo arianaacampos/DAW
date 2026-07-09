@@ -70,10 +70,12 @@
     <Content Include="Bitacora.aspx" />
     <Content Include="CambiarClave.aspx" />
     <Content Include="ControlIntegridad.aspx" />
+    <Content Include="FlotaABM.aspx" />
     <Content Include="Inicio.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="MisReservas.aspx" />
     <Content Include="Principal.aspx" />
+    <Content Include="Seguridad.aspx" />
     <Content Include="Vehiculos.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -98,6 +100,13 @@
     </Compile>
     <Compile Include="ControlIntegridad.aspx.designer.cs">
       <DependentUpon>ControlIntegridad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FlotaABM.aspx.cs">
+      <DependentUpon>FlotaABM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FlotaABM.aspx.designer.cs">
+      <DependentUpon>FlotaABM.aspx</DependentUpon>
     </Compile>
     <Compile Include="Inicio.aspx.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
@@ -128,6 +137,13 @@
       <DependentUpon>Principal.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Seguridad.aspx.cs">
+      <DependentUpon>Seguridad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Seguridad.aspx.designer.cs">
+      <DependentUpon>Seguridad.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Vehiculos.aspx.cs">
       <DependentUpon>Vehiculos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

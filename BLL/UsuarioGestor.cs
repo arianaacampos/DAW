@@ -11,52 +11,51 @@ namespace BLL
 {
     public class UsuarioGestor
     {
-        public bool ValidarComplejidadClave(string clave)
-        {
-            var regex = new Regex(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$");
-            return regex.IsMatch(clave);
-        }
-        public string IntentarLogin(string username, string password)
+        public string IntentarLogin(string username, string passwordPlana)
         {
             UsuarioMapper mapper = new UsuarioMapper();
-            UsuarioBE user = mapper.ObtenerPorUsername(username);
+            UsuarioBE user = mapper.ObtenerUsuario(username);
 
-            if (user == null)
-            {
-                return "Usuario no encontrado.";
-            }
+            if (user == null) return "El usuario no existe.";
+            if (user.Bloqueado) return "La cuenta está bloqueada por seguridad.";
 
-            if (user.Bloqueado)
-            {
-                return "Cuenta bloqueada por seguridad. Contacte al administrador.";
-            }
+            // 🔥 ENCRIPTAMOS LO QUE ESCRIBIÓ EL USUARIO EN LA PANTALLA
+            string passwordHasheada = Criptografia.EncriptarSHA256(passwordPlana);
 
-            if (user.Password == password)
+            // COMPRAMOS HASH VS HASH
+            if (user.Password != passwordHasheada)
             {
-                mapper.ActualizarIntentos(username, 0, false);
-                return "OK";
+                // Falló: Le sumamos 1 intento
+                user.IntentosFallidos++;
+                if (user.IntentosFallidos >= 3) user.Bloqueado = true;
+
+                mapper.ActualizarIntentos(username, user.IntentosFallidos, user.Bloqueado);
+
+                return user.Bloqueado ? "Cuenta bloqueada por múltiples intentos." : $"Contraseña incorrecta. Intento {user.IntentosFallidos}/3.";
             }
             else
             {
-                user.IntentosFallidos++;
+                // Éxito: Reseteamos los intentos a 0
+                mapper.ActualizarIntentos(username, 0, false);
 
-                if (user.IntentosFallidos >= 3)
-                {
-                    mapper.ActualizarIntentos(username, user.IntentosFallidos, true);
-                    return "Cuenta bloqueada automáticamente por 3 intentos fallidos.";
-                }
-                else
-                {
-                    mapper.ActualizarIntentos(username, user.IntentosFallidos, false);
-                    return $"Contraseña incorrecta. Intento {user.IntentosFallidos} de 3.";
-                }
+                // 🔥 GUARDAMOS USUARIO Y ROL EN EL SINGLETON (Dejamos de depender de la UI)
+                SessionManager.GetInstance.Usuario = user.Username;
+                SessionManager.GetInstance.Rol = user.Rol;
+
+                return "OK";
             }
         }
-        public void CambiarClave(string username, string nuevaClave)
+
+        public void CambiarClave(string username, string nuevaClavePlana)
         {
+            // 🔥 Encriptamos la clave nueva antes de mandarla a SQL
+            string hashNuevaClave = Criptografia.EncriptarSHA256(nuevaClavePlana);
+
             UsuarioMapper mapper = new UsuarioMapper();
-            mapper.ActualizarPassword(username, nuevaClave);
-            BitacoraGestor.RegistrarAccion(username, "Modificó su contraseña");
+            mapper.ActualizarPassword(username, hashNuevaClave);
+
+            // Registramos en Bitácora
+            BitacoraGestor.RegistrarAccion(username, "Modificó su contraseña.");
         }
     }
 }

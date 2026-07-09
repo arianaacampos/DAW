@@ -51,13 +51,13 @@ namespace DAWSistema
         protected global::System.Web.UI.WebControls.Label lblUsuarioSidebar;
 
         /// <summary>
-        /// Control btnSalir.
+        /// Control BtnSalir.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSalir;
+        protected global::System.Web.UI.WebControls.Button BtnSalir;
 
         /// <summary>
         /// Control lblUsuario.
@@ -114,6 +114,15 @@ namespace DAWSistema
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl cardFlota;
 
         /// <summary>
+        /// Control btnABMFlota.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnABMFlota;
+
+        /// <summary>
         /// Control cardBitacora.
         /// </summary>
         /// <remarks>
@@ -139,5 +148,14 @@ namespace DAWSistema
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl cardSeguridad;
+
+        /// <summary>
+        /// Control btnSeguridad.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSeguridad;
     }
 }

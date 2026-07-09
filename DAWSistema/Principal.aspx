@@ -57,7 +57,7 @@
             </nav>
             <div class="sidebar-footer">
                 <div class="user-info"><span>👤</span> <asp:Label ID="lblUsuarioSidebar" runat="server"></asp:Label></div>
-                <asp:Button ID="btnSalir" runat="server" Text="🚪 Cerrar Sesión" CssClass="btn-logout" OnClick="btnSalir_Click" />
+                <asp:Button ID="BtnSalir" runat="server" Text="🚪 Cerrar Sesión" CssClass="btn-logout" OnClick="btnSalir_Click" OnClientClick="return confirm('¿Estás seguro que querés cerrar sesión y salir del sistema?');" />
             </div>
         </aside>
 
@@ -89,7 +89,7 @@
                     <div class="card-content">
                         <h3>Gestión de Flota (ABM)</h3>
                         <p>Administra los vehículos de la agencia. Alta, baja y modificación de unidades.</p>
-                        <button type="button" class="btn-card primary" onclick="alert('Módulo ABM Vehículos en desarrollo')">Ir a Flota ➔</button>
+                        <asp:Button ID="btnABMFlota" runat="server" Text="Ir a Flota (ABM) ➔" CssClass="btn-card primary" OnClick="btnABMFlota_Click" />
                     </div>
                 </div>
 
@@ -107,7 +107,7 @@
                     <div class="card-content">
                         <h3>Seguridad (Web Master)</h3>
                         <p>Control de Backups, Restore de la base de datos y validación de Dígitos Verificadores.</p>
-                        <button type="button" class="btn-card primary" onclick="alert('Módulo de Seguridad en desarrollo')">Panel de Seguridad ➔</button>
+                       <asp:Button ID="btnSeguridad" runat="server" Text="Panel de Seguridad ➔" CssClass="btn-card primary" OnClick="btnSeguridad_Click" />
                     </div>
                 </div>
 
