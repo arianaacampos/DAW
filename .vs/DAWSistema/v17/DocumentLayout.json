@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\DAW-main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|C:\\Users\\Usuario\\Desktop\\DAW-main\\dawsistema\\bitacora.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|c:\\users\\usuario\\desktop\\daw-main\\dawsistema\\bitacora.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|solutionrelative:dawsistema\\bitacora.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
@@ -27,7 +27,7 @@
       "RelativeMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|solutionrelative:dawsistema\\inicio.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|c:\\users\\usuario\\desktop\\daw-main\\dawsistema\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|C:\\Users\\Usuario\\Desktop\\DAW-main\\dawsistema\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{F2F39FB8-CAA0-4084-94F4-33A96084C611}|DAWSistema\\DAWSistema.csproj|solutionrelative:dawsistema\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
@@ -170,8 +170,7 @@
               "RelativeToolTip": "DAWSistema\\Vehiculos.aspx",
               "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-06-08T14:44:05.728Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-08T14:44:05.728Z"
             },
             {
               "$type": "Document",
@@ -183,8 +182,7 @@
               "RelativeToolTip": "DAWSistema\\Vehiculos.aspx.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAAAFYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T14:44:30.686Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-08T14:44:30.686Z"
             },
             {
               "$type": "Document",
@@ -196,8 +194,7 @@
               "RelativeToolTip": "DAWSistema\\Login.aspx.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAAA8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T16:13:58.203Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-30T16:13:58.203Z"
             },
             {
               "$type": "Document",
@@ -209,8 +206,7 @@
               "RelativeToolTip": "DAWSistema\\Login.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-05-30T16:13:51.234Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-30T16:13:51.234Z"
             },
             {
               "$type": "Document",
@@ -222,8 +218,7 @@
               "RelativeToolTip": "BE\\UsuarioBE.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T23:08:12.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-09T23:08:12.114Z"
             },
             {
               "$type": "Document",
@@ -235,8 +230,7 @@
               "RelativeToolTip": "BLL\\UsuarioGestor.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAqwEkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T16:13:21.069Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-30T16:13:21.069Z"
             },
             {
               "$type": "Document",
@@ -248,8 +242,7 @@
               "RelativeToolTip": "DAL\\UsuarioMapper.cs",
               "ViewState": "AgIAAD4AAAAAAAAAAAAwwFQAAACnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T16:12:39.434Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-30T16:12:39.434Z"
             },
             {
               "$type": "Document",
@@ -261,8 +254,7 @@
               "RelativeToolTip": "DAWSistema\\Principal.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-06-01T03:14:40.234Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-01T03:14:40.234Z"
             },
             {
               "$type": "Document",
@@ -274,8 +266,7 @@
               "RelativeToolTip": "DAWSistema\\Inicio.aspx",
               "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-06-08T14:51:16.593Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-08T14:51:16.593Z"
             },
             {
               "$type": "Document",
@@ -287,8 +278,7 @@
               "RelativeToolTip": "DAWSistema\\Seguridad.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-07-09T21:31:05.673Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-09T21:31:05.673Z"
             },
             {
               "$type": "Document",
@@ -313,8 +303,7 @@
               "RelativeToolTip": "DAWSistema\\FlotaABM.aspx",
               "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-07-09T21:18:19.746Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-09T21:18:19.746Z"
             },
             {
               "$type": "Document",
@@ -326,8 +315,7 @@
               "RelativeToolTip": "DAWSistema\\Seguridad.aspx.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAAwwFEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T21:31:18.507Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-09T21:31:18.507Z"
             },
             {
               "$type": "Document",
@@ -339,8 +327,7 @@
               "RelativeToolTip": "DAWSistema\\Registro.aspx.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAowCkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T00:09:33.882Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T00:09:33.882Z"
             },
             {
               "$type": "Document",
@@ -352,8 +339,7 @@
               "RelativeToolTip": "DAWSistema\\Registro.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-07-09T23:53:24.112Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-09T23:53:24.112Z"
             },
             {
               "$type": "Document",
@@ -365,8 +351,7 @@
               "RelativeToolTip": "DAWSistema\\Principal.aspx.cs",
               "ViewState": "AgIAADoAAAAAAAAAAAAAAF4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T12:51:21.149Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-01T12:51:21.149Z"
             },
             {
               "$type": "Document",
@@ -378,8 +363,7 @@
               "RelativeToolTip": "DAWSistema\\MisReservas.aspx.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAgwEEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T13:37:38.634Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-08T13:37:38.634Z"
             },
             {
               "$type": "Document",
@@ -391,8 +375,7 @@
               "RelativeToolTip": "DAWSistema\\MisReservas.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-07-08T13:37:23.067Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-08T13:37:23.067Z"
             },
             {
               "$type": "Document",
@@ -404,8 +387,7 @@
               "RelativeToolTip": "DAWSistema\\Inicio.aspx.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T16:50:22.858Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-08T16:50:22.858Z"
             },
             {
               "$type": "Document",
@@ -417,8 +399,7 @@
               "RelativeToolTip": "DAWSistema\\FlotaABM.aspx.cs",
               "ViewState": "AgIAADcAAAAAAAAAAAAgwF0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T21:18:34.18Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-09T21:18:34.18Z"
             },
             {
               "$type": "Document",
@@ -430,8 +411,7 @@
               "RelativeToolTip": "DAWSistema\\ControlIntegridad.aspx.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAwwE0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T17:37:53.263Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-08T17:37:53.263Z"
             },
             {
               "$type": "Document",
@@ -443,8 +423,7 @@
               "RelativeToolTip": "DAWSistema\\ControlIntegridad.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-07-08T17:37:41.569Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-08T17:37:41.569Z"
             },
             {
               "$type": "Document",
@@ -456,8 +435,7 @@
               "RelativeToolTip": "DAWSistema\\CambiarClave.aspx.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T16:54:29.851Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-08T16:54:29.851Z"
             },
             {
               "$type": "Document",
@@ -469,8 +447,7 @@
               "RelativeToolTip": "DAWSistema\\CambiarClave.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-07-08T16:54:24.072Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-08T16:54:24.072Z"
             },
             {
               "$type": "Document",
@@ -482,8 +459,7 @@
               "RelativeToolTip": "DAWSistema\\Bitacora.aspx.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAwwEQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T03:13:11.35Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-01T03:13:11.35Z"
             },
             {
               "$type": "Document",
@@ -495,8 +471,7 @@
               "RelativeToolTip": "DAL\\VehiculoMapper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T00:06:37.414Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-09T00:06:37.414Z"
             },
             {
               "$type": "Document",
@@ -508,8 +483,7 @@
               "RelativeToolTip": "DAL\\SeguridadMapper.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAowA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T17:35:07.957Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-08T17:35:07.957Z"
             },
             {
               "$type": "Document",
@@ -521,8 +495,7 @@
               "RelativeToolTip": "DAL\\ReservaMapper.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T23:09:55.887Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-09T23:09:55.887Z"
             },
             {
               "$type": "Document",
@@ -534,8 +507,7 @@
               "RelativeToolTip": "BLL\\VehiculoGestor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwBQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T21:17:18.305Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-09T21:17:18.305Z"
             },
             {
               "$type": "Document",
@@ -547,8 +519,7 @@
               "RelativeToolTip": "BLL\\SeguridadGestor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T17:35:59.917Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-08T17:35:59.917Z"
             },
             {
               "$type": "Document",
@@ -560,8 +531,7 @@
               "RelativeToolTip": "BLL\\BitacoraGestor.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAzwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T23:46:07.255Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-08T23:46:07.255Z"
             },
             {
               "$type": "Document",
@@ -573,8 +543,7 @@
               "RelativeToolTip": "BE\\Vehiculo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T00:05:45.306Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-09T00:05:45.306Z"
             },
             {
               "$type": "Document",
@@ -586,8 +555,7 @@
               "RelativeToolTip": "DAL\\BitacoraMapper.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAAYwDoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T03:10:11.28Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-01T03:10:11.28Z"
             },
             {
               "$type": "Document",
@@ -599,8 +567,7 @@
               "RelativeToolTip": "BE\\ReservaBE.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T23:08:06.524Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-09T23:08:06.524Z"
             },
             {
               "$type": "Document",
@@ -612,8 +579,7 @@
               "RelativeToolTip": "BE\\BitacoraBE.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T23:46:12.742Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-08T23:46:12.742Z"
             },
             {
               "$type": "Document",
@@ -625,8 +591,7 @@
               "RelativeToolTip": "BE\\SessionManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T17:15:17.387Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-08T17:15:17.387Z"
             },
             {
               "$type": "Document",
@@ -638,8 +603,7 @@
               "RelativeToolTip": "BE\\Criptografia.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T23:42:44.829Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-08T23:42:44.829Z"
             }
           ]
         }
