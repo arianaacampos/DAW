@@ -46,7 +46,6 @@ namespace DAWSistema
         private void CargarBitacora(string desde, string hasta, string usuario, string accion)
         {
             BitacoraGestor gestor = new BitacoraGestor();
-            // Le pasamos los 4 filtros a la BLL
             DataTable dt = gestor.ObtenerHistorialAvanzado(desde, hasta, usuario, accion);
 
             dt.Columns.Add("Criticidad", typeof(string));

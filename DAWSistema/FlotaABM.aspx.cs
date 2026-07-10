@@ -43,7 +43,7 @@ namespace DAWSistema
 
                 LimpiarFormulario();
                 CargarGrilla();
-                ClientScript.RegisterStartupScript(this.GetType(), "ok", "alert('✅ Vehículo guardado con éxito');", true);
+                ClientScript.RegisterStartupScript(this.GetType(), "ok", "alert('✅ Vehículo guardado con exito');", true);
             }
             catch (Exception ex)
             {

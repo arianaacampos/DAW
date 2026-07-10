@@ -32,7 +32,6 @@
             border: 1px solid #eaeaea;
         }
 
-        /* Icono de AutoRent superior */
         .brand-icon {
             font-size: 3rem;
             color: #8B0000;
@@ -53,7 +52,6 @@
             margin-bottom: 30px;
         }
 
-        /* Grupo de campos de entrada */
         .form-group {
             text-align: left;
             margin-bottom: 20px;
@@ -83,7 +81,6 @@
             border-color: #8B0000;
         }
 
-        /* Botón Ingresar */
         .btn-primary {
             background-color: #8B0000;
             color: white;
@@ -102,7 +99,6 @@
             background-color: #660000;
         }
 
-        /* Mensajes de error */
         .error-message {
             display: block;
             margin-top: 15px;
@@ -115,8 +111,7 @@
     <form id="form1" runat="server">
         <div class="login-container">
             <div class="brand-icon">🚗</div>
-            <h2>Inicia sesión en tu cuenta</h2>
-            <p>Ingresa tus credenciales para acceder al sistema de AutoRent.</p>
+            <h2>Inicia sesion en tu cuenta</h2>
             
             <div class="form-group">
                 <label>Correo electrónico o Usuario</label>
@@ -129,7 +124,9 @@
             </div>
             
             <asp:Button ID="btnIngresar" runat="server" Text="Iniciar sesión" CssClass="btn-primary" OnClick="btnIngresar_Click" />
-            
+            <a href="Registro.aspx" style="display: block; text-align: center; margin-top: 20px; font-size: 0.9rem; color: #555; text-decoration: none;">
+    ¿No tenés cuenta? <span style="color: #8B0000; font-weight: bold;">Registrate acá</span>
+</a>
             <asp:Label ID="lblMensaje" runat="server" CssClass="error-message" ForeColor="Red"></asp:Label>
         </div>
     </form>

@@ -20,9 +20,8 @@ namespace BLL
                 nuevoRegistro.Usuario = usuarioLogueado;
                 nuevoRegistro.Accion = accionRealizada;
 
-                // 🛡️ MAGIA DE INTEGRIDAD: Calculamos el DVH antes de guardar
                 SeguridadGestor segGestor = new SeguridadGestor();
-                string cadenaFila = nuevoRegistro.Usuario + nuevoRegistro.Accion; // Armamos la cadena
+                string cadenaFila = nuevoRegistro.Usuario + nuevoRegistro.Accion; 
                 long dvh = segGestor.CalcularDVH(cadenaFila);
 
                 BitacoraMapper mapper = new BitacoraMapper();

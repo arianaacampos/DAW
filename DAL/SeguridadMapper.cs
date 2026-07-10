@@ -14,9 +14,6 @@ namespace DAL
         private string cadenaConexion = "Data Source=.;Initial Catalog=DAW;Integrated Security=True;Encrypt=False;";
         private string cadenaMaster = "Data Source=.;Initial Catalog=master;Integrated Security=True;Encrypt=False;";
 
-        // ==========================================
-        // 1. MÉTODOS DE INTEGRIDAD Y DÍGITOS
-        // ==========================================
         public bool ValidarIntegridadTabla(string nombreTabla)
         {
             using (SqlConnection conn = new SqlConnection(cadenaConexion))
@@ -49,7 +46,6 @@ namespace DAL
             }
         }
 
-        // 🔥 LA CURA DEL BUCLE 1: Repara la fila rota
         public void RepararDVHFila(string tabla, string columnaId, int id, long dvhReal)
         {
             using (SqlConnection conn = new SqlConnection(cadenaConexion))
@@ -63,7 +59,6 @@ namespace DAL
             }
         }
 
-        // 🔥 LA CURA DEL BUCLE 2: Sincroniza la Bitácora y todas las tablas con su suma real
         public void SincronizarTodosLosDVV()
         {
             using (SqlConnection conn = new SqlConnection(cadenaConexion))
@@ -75,9 +70,6 @@ namespace DAL
             }
         }
 
-        // ==========================================
-        // 2. MÉTODOS DE BACKUP Y RESTORE
-        // ==========================================
         public void RealizarBackup(string rutaDestino)
         {
             using (SqlConnection conn = new SqlConnection(cadenaConexion))

@@ -25,7 +25,6 @@ namespace BLL
         {
             SeguridadMapper mapper = new SeguridadMapper();
 
-            // 1. CHEQUEO HORIZONTAL (Fila por fila en Usuarios)
             DataTable dtUsuarios = mapper.ObtenerDatosTabla("Usuarios");
             long sumaDvhCalculado = 0;
 
@@ -48,7 +47,6 @@ namespace BLL
                 sumaDvhCalculado += dvhCalculadoEnVivo;
             }
 
-            // 2. CHEQUEO VERTICAL (Totales)
             if (!mapper.ValidarIntegridadTabla("Usuarios")) return "Error Vertical -> Tabla: Usuarios (El total no coincide)";
             if (!mapper.ValidarIntegridadTabla("Reservas")) return "Error Vertical -> Tabla: Reservas (El total no coincide)";
             if (!mapper.ValidarIntegridadTabla("Bitacora")) return "Error Vertical -> Tabla: Bitacora (El total no coincide)";
@@ -56,12 +54,10 @@ namespace BLL
             return "OK";
         }
 
-        // 🔥 ACÁ ESTÁ LA MAGIA QUE ARREGLA EL BUCLE
         public void RecalcularDigitos()
         {
             SeguridadMapper mapper = new SeguridadMapper();
 
-            // 1. Recorremos la tabla Usuarios y REPARAMOS cada DVH roto con la matemática correcta
             DataTable dtUsuarios = mapper.ObtenerDatosTabla("Usuarios");
             foreach (DataRow fila in dtUsuarios.Rows)
             {
@@ -77,10 +73,8 @@ namespace BLL
                 mapper.RepararDVHFila("Usuarios", "ID", idUsuario, dvhReal);
             }
 
-            // 2. Ahora sí, hacemos que el DVV de la Bitácora y demás tablas se sincronice a su valor real
             mapper.SincronizarTodosLosDVV();
 
-            // 3. Dejamos asentado en la Bitácora el rescate heroico del Web Master
             BitacoraGestor.RegistrarAccion("Master", "Ejecutó Recálculo Real de DVH y DVV. El sistema fue salvado.");
         }
 

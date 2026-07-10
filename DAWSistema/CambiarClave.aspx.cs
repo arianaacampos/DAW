@@ -19,7 +19,7 @@ namespace DAWSistema
         {
             if (string.IsNullOrEmpty(txtNuevaClave.Text))
             {
-                ClientScript.RegisterStartupScript(this.GetType(), "Alerta", "alert('⚠️ Ingresá una contraseña.');", true);
+                ClientScript.RegisterStartupScript(this.GetType(), "Alerta", "alert('⚠️ Ingresa una contraseña.');", true);
                 return;
             }
 
@@ -29,7 +29,7 @@ namespace DAWSistema
             UsuarioGestor gestor = new UsuarioGestor();
             gestor.CambiarClave(usuario, nuevaClave);
 
-            ClientScript.RegisterStartupScript(this.GetType(), "Exito", "alert('✅ ¡Contraseña cambiada con éxito!'); window.location.href='Principal.aspx';", true);
+            ClientScript.RegisterStartupScript(this.GetType(), "Exito", "alert('✅ ¡Contraseña cambiada con exito!'); window.location.href='Principal.aspx';", true);
         }
     }
 }

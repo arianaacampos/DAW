@@ -19,25 +19,23 @@ namespace BLL
 
         public void GuardarVehiculo(Vehiculo vehiculo, string usuarioLogueado)
         {
-            // Tu validación original
             if (string.IsNullOrWhiteSpace(vehiculo.Patente))
             {
                 throw new Exception("La patente es obligatoria.");
             }
 
-            // Calculamos el Dígito Verificador (DVH)
             SeguridadGestor segGestor = new SeguridadGestor();
             string cadenaFila = vehiculo.Marca + vehiculo.Modelo + vehiculo.Patente;
             vehiculo.DVH = segGestor.CalcularDVH(cadenaFila);
 
             VehiculoMapper mapper = new VehiculoMapper();
 
-            if (vehiculo.ID == 0) // Si el ID es 0, es un ALTA
+            if (vehiculo.ID == 0) 
             {
                 mapper.Insertar(vehiculo);
                 BitacoraGestor.RegistrarAccion(usuarioLogueado, $"Dio de ALTA el vehículo Patente: {vehiculo.Patente}");
             }
-            else // Si tiene ID, es una MODIFICACIÓN
+            else 
             {
                 mapper.Actualizar(vehiculo);
                 BitacoraGestor.RegistrarAccion(usuarioLogueado, $"MODIFICÓ el vehículo ID {vehiculo.ID}");

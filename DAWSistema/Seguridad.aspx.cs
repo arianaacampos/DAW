@@ -18,7 +18,6 @@ namespace DAWSistema
                 Response.Redirect("Login.aspx");
             }
 
-            // 2. Si hay alguien, pero su ROL NO es "WebMaster", lo echamos al menú principal
             if (SessionManager.GetInstance.Rol != "WebMaster")
             {
                 Response.Redirect("Principal.aspx");
@@ -29,23 +28,17 @@ namespace DAWSistema
         {
             try
             {
-                // 1. Agarramos la carpeta que escribió el Master en la cajita
                 string carpetaDestino = txtRutaBackup.Text.Trim();
 
-                // 2. Validación de oro: Nos aseguramos de que termine con la barra '\'
-                // Así, si el usuario pone "C:\Backups" o "C:\Backups\", funciona igual
                 if (!carpetaDestino.EndsWith("\\"))
                 {
                     carpetaDestino += "\\";
                 }
 
-                // 3. Armamos el nombre del archivo con la fecha
                 string nombreArchivo = "DAW_Backup_" + DateTime.Now.ToString("dd-MM-yyyy_HH-mm") + ".bak";
 
-                // 4. Juntamos la carpeta que eligió + el nombre del archivo
                 string rutaCompleta = carpetaDestino + nombreArchivo;
 
-                // 5. Ejecutamos
                 SeguridadGestor gestor = new SeguridadGestor();
                 gestor.HacerBackup(rutaCompleta, SessionManager.GetInstance.Usuario);
 
@@ -53,7 +46,6 @@ namespace DAWSistema
             }
             catch (Exception ex)
             {
-                // Si la carpeta que escribió no existe o no tiene permisos, salta este error
                 ClientScript.RegisterStartupScript(this.GetType(), "Error", $"alert('❌ Error al hacer Backup: {ex.Message}\\n\\nVerificá que la carpeta que escribiste exista de verdad en tu computadora.');", true);
             }
         }
@@ -62,14 +54,12 @@ namespace DAWSistema
         {
             try
             {
-                // Validamos que haya subido un archivo
                 if (!fuRestore.HasFile)
                 {
                     ClientScript.RegisterStartupScript(this.GetType(), "Falta", "alert('⚠️ Por favor seleccioná un archivo .bak primero.');", true);
                     return;
                 }
 
-                // Guardamos el archivo que subió temporalmente en la carpeta Backups
                 string rutaTemporal = @"C:\Backups\RestoreTemp.bak";
                 fuRestore.SaveAs(rutaTemporal);
 

@@ -19,7 +19,6 @@ namespace DAWSistema
             {
                 string rol = SessionManager.GetInstance.Rol;
 
-                // 🔥 Validamos contra el ROL, no contra el nombre
                 if (rol == "WebMaster")
                 {
                     panelMaster.Visible = true;
@@ -40,7 +39,6 @@ namespace DAWSistema
             SeguridadGestor gestor = new SeguridadGestor();
             gestor.RecalcularDigitos();
 
-            // Listo, arreglado. Lo dejamos entrar al menú principal.
             Response.Redirect("Principal.aspx");
         }
 
@@ -49,8 +47,6 @@ namespace DAWSistema
             SessionManager.GetInstance.Logout();
             Response.Redirect("Login.aspx");
         }
-
-        // BOTÓN 2: RESTORE
         protected void btnRestore_Click(object sender, EventArgs e)
         {
             try
@@ -61,14 +57,13 @@ namespace DAWSistema
                     return;
                 }
 
-                // Guardamos el backup temporalmente y lo restauramos
                 string rutaTemporal = @"C:\Backups\RestoreEmergencia.bak";
                 fuRestore.SaveAs(rutaTemporal);
 
                 SeguridadGestor gestor = new SeguridadGestor();
                 gestor.HacerRestore(rutaTemporal, SessionManager.GetInstance.Usuario);
 
-                ClientScript.RegisterStartupScript(this.GetType(), "Ok", "alert('✅ ¡Sistema restaurado! Ahora podés ingresar normalmente.'); window.location.href='Principal.aspx';", true);
+                ClientScript.RegisterStartupScript(this.GetType(), "Ok", "alert('✅ ¡Sistema restaurado!'); window.location.href='Principal.aspx';", true);
             }
             catch (Exception ex)
             {

@@ -8,7 +8,6 @@
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         body { background-color: #111; color: white; }
         
-        /* Barra de Navegación */
         .navbar { 
             display: flex; 
             justify-content: space-between; 
@@ -36,12 +35,10 @@
         }
         .btn-login:hover { background-color: #660000; }
 
-        /* Sección Principal (Hero) */
         .hero { 
             text-align: center; 
             padding: 120px 20px; 
             
-            /* ACÁ ESTÁ EL FONDO: Simula el fondo oscuro y carga tu imagen */
             background-image: linear-gradient(135deg, rgba(139,0,0,0.8) 0%, rgba(17,17,17,0.95) 100%), url('Imagenes/inicio.png');
             background-size: cover;
             background-position: center;
@@ -56,7 +53,6 @@
         .hero h1 { font-size: 3.5rem; margin-bottom: 15px; font-weight: 900; letter-spacing: -1px; }
         .hero p { font-size: 1.2rem; margin-bottom: 40px; color: #ddd; max-width: 600px; line-height: 1.5; }
 
-        /* Barra de Búsqueda Blanca */
         .search-container {
             background-color: white;
             padding: 15px;
@@ -102,23 +98,23 @@
         
         <nav class="navbar">
             <div class="nav-left">
-                <div class="logo"><span class="logo-icon">🚗</span> AutoRent</div>
+                <div class="logo"><span class="logo-icon"></span> AutoRent</div>
                 <div class="nav-links">
                     <a href="Inicio.aspx" class="active">Inicio</a>
                     <a href="Vehiculos.aspx" style="margin-left: 15px;">Flota</a>
                 </div>
             </div>
-          <asp:Button ID="btnIrLogin" runat="server" Text="👤 Iniciar Sesión" CssClass="btn-login" OnClick="btnIrLogin_Click" formnovalidate="formnovalidate" CausesValidation="false" />
+          <asp:Button ID="btnIrLogin" runat="server" Text=" Iniciar Sesion" CssClass="btn-login" OnClick="btnIrLogin_Click" formnovalidate="formnovalidate" CausesValidation="false" />
         </nav>
 
         <div class="hero">
             <h1>Encuentra tu viaje perfecto</h1>
-            <p>Alquila los mejores autos para tus aventuras, viajes de negocios o escapadas de fin de semana con AutoRent.</p>
+            <p>Alquila los mejores autos para tus viajes o escapadas de fin de semana con AutoRent.</p>
             
             <div class="search-container">
                 <div class="input-group">
                     <label>RECOGIDA</label>
-                    <asp:TextBox ID="txtCiudad" runat="server" placeholder="📍 Ciudad, Aeropuerto..." Required="true"></asp:TextBox>
+                    <asp:TextBox ID="txtCiudad" runat="server" placeholder="Ciudad, Aeropuerto..." Required="true"></asp:TextBox>
                 </div>
                 <div class="input-group">
                     <label>FECHA INICIO</label>
@@ -128,7 +124,7 @@
                     <label>FECHA FIN</label>
                     <asp:TextBox ID="txtFechaFin" runat="server" TextMode="Date" Required="true"></asp:TextBox>
                 </div>
-                <asp:Button ID="btnBuscar" runat="server" Text="🔍 Buscar" CssClass="btn-search" OnClick="btnBuscar_Click" />
+                <asp:Button ID="btnBuscar" runat="server" Text="Buscar" CssClass="btn-search" OnClick="btnBuscar_Click" />
             </div>
         </div>
 

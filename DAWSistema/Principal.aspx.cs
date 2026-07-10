@@ -19,23 +19,19 @@ namespace DAWSistema
             if (!IsPostBack)
             {
                 string usuario = SessionManager.GetInstance.Usuario;
-                string rol = SessionManager.GetInstance.Rol; // 🔥 ACÁ TENEMOS EL ROL OFICIAL DE SQL
+                string rol = SessionManager.GetInstance.Rol;
 
                 lblUsuario.Text = usuario;
                 lblUsuarioSidebar.Text = usuario + " (" + rol + ")";
 
-                // Apagamos todo por defecto
                 cardFlota.Visible = false;
                 cardBitacora.Visible = false;
                 cardSeguridad.Visible = false;
                 linkBitacora.Visible = false;
 
-                // ==========================================
-                // CONTROL DE ROLES BASADO EN BASE DE DATOS
-                // ==========================================
+
                 if (rol == "Cliente")
                 {
-                    // Juan entra acá. Solo ve Reservas y Cambiar Clave (que siempre está visible)
                 }
                 else if (rol == "Administrador")
                 {
@@ -73,7 +69,6 @@ namespace DAWSistema
                 BitacoraGestor.RegistrarAccion(usuario, "Logout exitoso");
             }
 
-            // 🔥 Cerramos sesión con Singleton
             SessionManager.GetInstance.Logout();
             Response.Redirect("Login.aspx");
         }
@@ -92,7 +87,6 @@ namespace DAWSistema
             Response.Redirect("FlotaABM.aspx");
         }
 
-        // 🔥 ESTE REDIRIGE AL MASTER AL BACKUP
         protected void btnSeguridad_Click(object sender, EventArgs e)
         {
             Response.Redirect("Seguridad.aspx");

@@ -22,7 +22,7 @@ namespace BE
         }
 
         public string Usuario { get; set; }
-        public string Rol { get; set; } // 🔥 AGREGAMOS EL ROL ACÁ
+        public string Rol { get; set; } 
 
         public void Logout()
         {

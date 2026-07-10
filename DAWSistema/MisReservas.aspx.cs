@@ -29,7 +29,6 @@ namespace DAWSistema
             Response.Redirect("Vehiculos.aspx");
         }
 
-        // --- EVENTO PARA BORRAR ---
         protected void gvMisReservas_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
             int id = Convert.ToInt32(gvMisReservas.DataKeys[e.RowIndex].Value);
@@ -38,7 +37,6 @@ namespace DAWSistema
             CargarGrilla();
         }
 
-        // --- EVENTOS PARA EDITAR LA FECHA ---
         protected void gvMisReservas_RowEditing(object sender, GridViewEditEventArgs e)
         {
             gvMisReservas.EditIndex = e.NewEditIndex;
@@ -55,7 +53,6 @@ namespace DAWSistema
         {
             int id = Convert.ToInt32(gvMisReservas.DataKeys[e.RowIndex].Value);
 
-            // Atrapamos la nueva fecha que escribió el usuario
             TextBox txtNuevaFecha = (TextBox)gvMisReservas.Rows[e.RowIndex].Cells[2].Controls[0];
             DateTime fechaActualizada = Convert.ToDateTime(txtNuevaFecha.Text);
 
