@@ -1,0 +1,6 @@
+C:\Users\Aru\OneDrive\Desktop\DAWSistema\BE\bin\Debug\BE.dll
+C:\Users\Aru\OneDrive\Desktop\DAWSistema\BE\bin\Debug\BE.pdb
+C:\Users\Aru\OneDrive\Desktop\DAWSistema\BE\obj\Debug\BE.csproj.AssemblyReference.cache
+C:\Users\Aru\OneDrive\Desktop\DAWSistema\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
+C:\Users\Aru\OneDrive\Desktop\DAWSistema\BE\obj\Debug\BE.dll
+C:\Users\Aru\OneDrive\Desktop\DAWSistema\BE\obj\Debug\BE.pdb
